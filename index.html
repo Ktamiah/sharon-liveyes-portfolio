@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHARON LIVEYES PORTFOLIO</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">SHARON LIVEYES</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-overlay">
+      <div class="hero-text">
+        <h2>Helping Hands You Can Trust</h2>
+        <p>Housekeeping • Caregiving • Cooking • Babysitting</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container about-container">
+      <img src="img/about.jpg" alt="About Sharon" class="about-img" />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I'm Sharon, a passionate and reliable service provider with years of hands-on experience in home care. 
+          Whether it's tidying your home, preparing a warm meal, taking care of a loved one, or babysitting your children — I do it with love, patience, and professionalism.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">My Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-broom"></i>
+          <h3>Housekeeping</h3>
+          <p>Neat, clean, and fresh – I treat every home like my own.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-hands-helping"></i>
+          <h3>Caregiving</h3>
+          <p>Empathetic and attentive care for elderly or recovering loved ones.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-utensils"></i>
+          <h3>Cooking</h3>
+          <p>Delicious home-style meals prepared with heart.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-baby"></i>
+          <h3>Babysitting</h3>
+          <p>Gentle, fun, and attentive care for your children.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="section-title">What Clients Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>"Sharon took amazing care of my home and kids. She's trustworthy and truly kind."</p>
+          <h4>- Grace N.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"I hired her for caregiving and couldn’t have asked for a better experience. She's like family."</p>
+          <h4>- Daniel K.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>"Her cooking is top notch! Everything was fresh and delicious."</p>
+          <h4>- Alice M.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!--pricing section-->
+ <section id="pricing" class="section">
+    <div class="container">
+      <h2 class="section-title">Pricing</h2>
+      <div class="pricing-table">
+        <div class="pricing-card">
+          <h3>Housekeeping</h3>
+          <p>KES 500/hour</p>
+          <small>Minimum 2 hours</small>
+        </div>
+        <div class="pricing-card">
+          <h3>Babysitting</h3>
+          <p>KES 700/hour</p>
+          <small>Includes meals & playtime</small>
+        </div>
+        <div class="pricing-card">
+          <h3>Caregiving</h3>
+          <p>KES 1000/hour</p>
+          <small>Day or night shift options</small>
+        </div>
+        <div class="pricing-card">
+          <h3>Cooking</h3>
+          <p>KES 800 per meal</p>
+          <small>Ingredients not included</small>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--booking section-->
+<section id="booking" class="section">
+    <div class="container">
+      <h2 class="section-title">Book a Service</h2>
+      <form id="booking-form">
+        <input type="text" id="client-name" placeholder="Your Name" required />
+        <input type="tel" id="client-phone" placeholder="Phone Number (WhatsApp)" required />
+        <select id="service-type" required>
+          <option value="">Select Service</option>
+          <option value="Housekeeping">Housekeeping</option>
+          <option value="Babysitting">Babysitting</option>
+          <option value="Caregiving">Caregiving</option>
+          <option value="Cooking">Cooking</option>
+        </select>
+        <input type="date" id="booking-date" required />
+        <input type="time" id="booking-time" required />
+        <textarea id="booking-note" placeholder="Any notes or special request"></textarea>
+        <button type="submit">Submit Booking</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-note">Feel free to reach out via WhatsApp or this form.</p>
+      <p class="phone"><i class="fas fa-phone"></i> <a href="tel:+254729534054">0729534054</a></p>
+      <p class="email"><i class="fas fa-envelope"></i> <a href="mailto:sharonvugutsa93@gmail.com">sharonvugutsa9@gmail.com</a></p>
+
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Sharon Liveyes. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
